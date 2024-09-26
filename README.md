@@ -1,31 +1,32 @@
 
-# **Setup and Configuration Guide for TextBlob Project**
+# **TextBlob Library Demo**
 
-## **1. Prerequisites**
-Before you start, ensure that you activate the environment and create a folder for this program outside of your **.env** folder
+This demo is for week 5 of the FDU AI Class Students
+The script demonstrates the key features of the TextBlob package which relies on NLTK. [Read more about TextBlob](https://textblob.readthedocs.io/en/dev/) and pay extra attention to the use of [Sentiment Analysis](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis) for your homework assignment
 
+## **1. Installation**
+Before you start, ensure that you activate the environment and create a folder for this program outside of your **.env** folder:
 
-## **2. Create a Project Directory**
-Create a directory to house the project files:
 ```bash
-mkdir ~/textblob_project
-cd ~/textblob_project
+cd ~
+git clone https://github.com/tirandagan/textblobDemo.git
+cd textblobDemo/code
 ```
 
-## **3. Install Required Python Packages**
+## **2. Install Required Python Packages**
 Install all the necessary packages using `pip`:
 ```bash
 pip install textblob nltk
 pip install --upgrade pip  # Upgrade pip to the latest version
 ```
 
-## **4. Download NLTK Corpora**
+## **3. Download NLTK Corpora**
 The TextBlob library and some of your modules require additional corpora from NLTK. You can download them using the command:
 ```bash
 python -m nltk.downloader all
 ```
 
-You should check which corpora you actually need to run your final program. Just delete the entire folder named `nltk_data` and install the necessary modules with commands such as:
+You should check which corpora you actually need to run your final program. Just delete the entire folder named `~/nltk_data` and install just the necessary modules with commands such as:
 
 ```bash
 python -m nltk.downloader averaged_perceptron_tagger
@@ -40,13 +41,13 @@ or run the nltk downloader interactively:
 python -m nltk.downloader
 ```
 
-## **9. Test the Program**
+## **4. Test the Program**
 
 Run the main program:
 ```bash
 python main_program.py
 ```
-## **10. Sample output**
+## **5. Sample output**
 
 ```
 Please enter a sentence: most of the people I meet don't know anything about pottery.
