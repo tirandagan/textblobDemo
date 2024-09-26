@@ -25,7 +25,10 @@ The TextBlob library and some of your modules require additional corpora from NL
 ```bash
 python -m nltk.downloader all
 ```
+**NOTE**: This above command performs an indiscrimnant download of all the corpora and requires large disk storage.
 
+---
+### Note about installing corpora: ###
 You should check which corpora you actually need to run your final program. Just delete the entire folder named `~/nltk_data` and install just the necessary modules with commands such as:
 
 ```bash
@@ -34,12 +37,11 @@ python -m nltk.downloader punkt
 python -m nltk.downloader wordnet
 python -m nltk.downloader brown
 ```
-
 or run the nltk downloader interactively:
-
 ```bash
 python -m nltk.downloader
 ```
+---
 
 ## **4. Test the Program**
 
