@@ -25,7 +25,7 @@ The TextBlob library and some of your modules require additional corpora from NL
 ```bash
 python -m nltk.downloader all
 ```
-**NOTE**: This above command performs an indiscrimnant download of all the corpora and requires large disk storage.
+<font color="#cE5030">**NOTE**: This above command performs an indiscrimnant download of all the corpora and requires large disk storage.</font>
 
 ---
 ### Note about installing corpora: ###
